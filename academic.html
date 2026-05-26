@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic &amp; Student Life | IDDC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#434653",
+              "inverse-on-surface": "#f2f0f1",
+              "primary": "#094cb2",
+              "tertiary-container": "#bfab49",
+              "surface-tint": "#2259bf",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e9e8e9",
+              "secondary": "#5a5f63",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#00419d",
+              "error": "#ba1a1a",
+              "on-primary-container": "#e7ebff",
+              "on-primary-fixed": "#001946",
+              "tertiary-fixed": "#f9e37a",
+              "surface": "#faf9fa",
+              "on-tertiary-fixed": "#211b00",
+              "surface-variant": "#e3e2e3",
+              "primary-fixed-dim": "#b1c5ff",
+              "on-secondary-container": "#606569",
+              "on-secondary-fixed": "#171c20",
+              "on-error": "#ffffff",
+              "background": "#faf9fa",
+              "surface-container-highest": "#e3e2e3",
+              "outline": "#737784",
+              "on-secondary-fixed-variant": "#42474b",
+              "secondary-container": "#dfe3e8",
+              "surface-bright": "#faf9fa",
+              "secondary-fixed": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#524600",
+              "outline-variant": "#c3c6d5",
+              "primary-container": "#3366cc",
+              "tertiary": "#6d5e00",
+              "surface-dim": "#dbdadb",
+              "primary-fixed": "#d9e2ff",
+              "tertiary-fixed-dim": "#dcc661",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#303031",
+              "on-tertiary-container": "#4a3f00",
+              "surface-container": "#efedee",
+              "surface-container-low": "#f5f3f4",
+              "secondary-fixed-dim": "#c2c7cc",
+              "on-background": "#1b1c1d",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1c1d"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .label-style { font-family: 'Public Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl shadow-sm border-b border-slate-100 transition-all">
+    <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1440px] mx-auto">
+        <div class="font-headline text-2xl font-black tracking-tighter text-primary flex items-center gap-3">
+            <img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhBzR2OAvLBBFdzbmZd2wre3bcGfXI4SsnEVmqQunPJqmfTEPYf42JYBK0qdxzW-mBhBK_3xft7pVHBHudYvZX2wNTvGnxMVl2zIbJu5VLfPg34ApA6qX7oDXE39AyQQIzrJN6X936lTQFNBcI2g-h0zrioYQE3wS2xTc-fX_BpFSbxRyXHqhGWJKCvnjE7KHOLDe2Y3ISZYsawuZXRCs-jmlixSRilRnpwr4wsXN9Pqbp2tMZhbmmD4cIB2TK3l-YvGsjgt6_D5Q">
+            <span class="text-slate-900 hidden sm:block">IDDC</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-8 font-body font-bold text-sm uppercase tracking-widest">
+            <a class="hover:text-primary transition-colors text-slate-700" href="index.html">Home</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="academic.html">Academic</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="showcase.html">Showcase</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="community.html">Community</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="community.html" class="bg-primary text-white px-6 py-2.5 font-headline text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all rounded-full">
+                Join Us
+            </a>
+        </div>
+    </div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Hero Section: Editorial Header -->
+<header class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<p class="label-style text-tertiary font-semibold tracking-widest uppercase mb-4">Eksplorasi Kampus</p>
+<h1 class="text-6xl md:text-8xl font-black text-on-surface leading-[1.1] mb-8">Harmoni Desain &amp; Nilai Akademik.</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">Selamat datang di pusat kreativitas digital berlandaskan etika. Di IDDC, mahasiswa tidak hanya belajar teknik, tetapi merajut identitas dalam setiap garis karya.</p>
+</div>
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="bg-surface-container-high p-6 rounded-xl">
+<div class="flex justify-between items-center mb-4">
+<span class="label-style text-xs font-bold text-secondary">INFO TERBARU</span>
+<span class="material-symbols-outlined text-primary">event_upcoming</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Pendaftaran Semester Ganjil</h3>
+<p class="text-sm text-on-surface-variant">Sesi konsultasi akademik dibuka mulai 12 Juli 2024.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid: Aktifitas Kuliah (Academic Activities) -->
+<section class="mb-24">
+<div class="flex items-center justify-between mb-10">
+<h2 class="text-4xl font-bold">Aktifitas Kuliah</h2>
+<div class="h-px flex-grow mx-8 bg-outline-variant/30"></div>
+<button class="text-primary font-semibold flex items-center gap-2 hover:underline">Lihat Kurikulum <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<!-- Main Feature -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container overflow-hidden group relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern digital design laboratory with students working on high-end monitors showing interface designs in a bright minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo9lSGK9vi8zyAMyY6kyos1FJMvszQez3M_Zm4dnnOPibIFJ0T4tek910zBvfFgk8S7T8_YRPvQ5Kpy7M7Ttb8u2gnL-Mrn94gO5a9Drjp7xMfNPMOD5NJuKmILE9rFSNcGsIhbSbeItN6oNj_mmOHzxrLHm4Uw5Nm2NCEzo3P0bGO1fcmIsjPFjCivbn0NdA7DSsgANHQEYfl5iSv4VvIBeOEPnRtRcXC3pBpVZsBBndrvS6XibA7I_t1DwQqPta9NVAVr2--otk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+<span class="label-style text-xs font-bold tracking-tighter mb-2 opacity-80">STUDIO UTAMA</span>
+<h3 class="text-3xl font-bold mb-4">Digital Design Lab 01</h3>
+<p class="text-sm opacity-70 max-w-md">Ruang kolaborasi intensif untuk UI/UX, Motion Design, dan Creative Coding dengan fasilitas workstation tercanggih.</p>
+</div>
+</div>
+<!-- Calligraphy Workshop -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-low overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Artist hand practicing traditional Islamic calligraphy with bamboo pen and ink on textured paper in a sunlit workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlCioUt6Fh5wVexMicQ0p9gYKQzeCCy0RhZbqgPAkP01deJBCdYJH_IAeI4MMm7us1yyDppDTYSF4iQ5bqMJi82oNn4QjtM33_KuHY0xJSwUazvn5FjlCQmnt3YeRAVX0OnnV54azwt5is7rZSvDWqvgZ5P81sbCYRsGjIHmxtq_ws9X16eUjwiFxLTHGSAcAa8GpS2nemaBc6AH2QZc8-6z20yLZIYLdyC-oz2F7Rfb-sdNg09mj-X04hkh9M9arERXs2wa3oASI"/>
+<div class="absolute inset-0 bg-white/40 group-hover:bg-transparent transition-all duration-500"></div>
+<div class="absolute top-6 left-6 bg-white/90 p-4 rounded-lg shadow-xl max-w-[200px]">
+<h4 class="font-bold text-slate-900">Modern Khat Class</h4>
+<p class="text-xs text-slate-600 mt-1">Menggabungkan estetika tradisional dengan media digital interaktif.</p>
+</div>
+</div>
+<!-- Collaborative Session -->
+<div class="md:col-span-1 md:row-span-1 bg-tertiary-container/10 p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl text-tertiary">groups</span>
+<div>
+<h4 class="font-bold text-xl mb-2">Critique Session</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Diskusi terbuka mingguan untuk membedah karya dan memperkaya perspektif visual.</p>
+</div>
+</div>
+<!-- Schedule Widget -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-high p-8">
+<h4 class="label-style text-xs font-bold text-secondary mb-6">JADWAL HARI INI</h4>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<span class="text-primary font-bold text-xs">09:00</span>
+<div class="border-l-2 border-primary pl-3">
+<p class="text-sm font-semibold">Visual Identity II</p>
+<p class="text-[10px] text-secondary">R. 402 — Ust. Khalid</p>
+</div>
+</li>
+<li class="flex gap-4 opacity-50">
+<span class="text-secondary font-bold text-xs">13:30</span>
+<div class="border-l-2 border-outline pl-3">
+<p class="text-sm font-semibold">Islamic Aesthetics</p>
+<p class="text-[10px] text-secondary">R. Teater — Dr. Amina</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Newsletter / Feature Section -->
+<section class="bg-inverse-surface text-inverse-on-surface rounded-3xl p-12 mb-24 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-5xl font-bold leading-tight mb-6 italic">"Seni adalah manifestasi syukur dalam bentuk visual."</h2>
+<p class="text-lg opacity-70 mb-8">Ingin bergabung dalam perjalanan kreatif kami? Dapatkan panduan kurikulum dan portofolio mahasiswa terbaik setiap bulannya.</p>
+<div class="flex gap-2">
+<input class="bg-white/10 border-none rounded-lg px-6 py-3 w-full focus:ring-2 focus:ring-primary" placeholder="Alamat email Anda" type="email"/>
+<button class="bg-primary px-8 py-3 rounded-lg font-bold">Subscribe</button>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-xl aspect-square object-cover" data-alt="Student practicing mindfulness in a quiet university library area with books and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmZgoFA2kWjsrdNxwJV7eArEAp_E7smY7nxbztG-WrfghiUOUnvi_GJqbr0cq9qBp18DKWTOfjCROnCGnXelkUUxOrG2uEa9BqlvfOOEGa3Oor2LXLd64Hx_NfLHBd9OTcvvFzWMGhS2EHLyQpevU904I8VWO8iaOF2E62MbSHHrsoysSTklppGlhWicL6L77CueoBJmNmqBZ3umghmJu7i-y_JyRpfm4eOcJ66EA-BjRHhG1mKyzHaQpIcpvyusgK65p9fDr49Tg"/>
+<img class="rounded-xl aspect-square object-cover mt-8" data-alt="Small group of diverse students collaborating around a table with laptops and sketches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBov13b8uS0cp7mvMplE8-sQzd0Vu_aGSbUkiFwagwC6Fo6WQZnp5niov_WQyyuks5kI-PawMp1upGlzq-gdCobgFSqRDp87inYR5P9OoHdSQe75eqE8d8nFzttC91ZvH77DU6biS1mP4iw-UR0YspAt07zYcPfbRGr5VpWMeLpb6t1TZQ1XV-55E_oUDJofcfi-wrBr8MCWKozprhAfdDbXVxQXP4sMYG8IYAfB88B_DuQZ82OyAdzmsplD4Ky6d2yJ1rx2wVxI2o"/>
+</div>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/20 blur-[120px] -mr-20"></div>
+</section>
+<!-- Kegiatan Ekstra Section (Extra-curriculars) -->
+<section>
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<p class="label-style text-tertiary font-semibold tracking-widest uppercase mb-2">Life at IDDC</p>
+<h2 class="text-4xl font-bold">Kegiatan Ekstra</h2>
+</div>
+<p class="text-on-surface-variant max-w-md text-right">Menumbuhkan karakter melalui komunitas yang solid dan eksplorasi minat di luar ruang kelas.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Club 1 -->
+<article class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Student photographer taking pictures of traditional architecture during a field trip, lens flare effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQNQROuBBHMRFYlbSWPr7-2YoDEGRgjbNAVBo76IDr683KRjpc8D6B-_-BstrTWWxlaVwThZdYz-XPLqf_6AUTU915vmkz0Q3rwn5e8-QWhgO9uinor7pBToF4rG0H6YWZn2j7vduu19-at54dSfMpHrQyBosa_AoEEvH7HjYPvC9N_YUYhyJiS0Tvnv9YMGFPSJZfqCX-5aPyRNOc2KuHsSTiU2RU10TitpQSi_DczxSQeWsWVcC2Sp8xlIC1UfG8qQQYpfq9iI8"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<span class="label-style text-[10px] bg-surface-container-highest px-2 py-1 rounded mb-3 inline-block">FOTOGRAFI &amp; DOKUMENTASI</span>
+<h3 class="text-2xl font-bold mb-2">Lensa Dakwah</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Eksplorasi narasi visual melalui lensa kamera, berfokus pada dokumentasi budaya dan kegiatan sosial.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-1 group-hover:gap-2 transition-all" href="#">GABUNG CLUB <span class="material-symbols-outlined text-sm">north_east</span></a>
+</article>
+<!-- Club 2 -->
+<article class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Interior of a modern student lounge with bean bags, plants, and natural light for social gathering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAW_3AfRBl8z10Kk4boXR7wVqXnax9KWnTpdpIJdmcTlRsKHGysHQ3QPlu0G5erCqIwUEdNr1wx5PsFioak9Mg12kqdbkYaF5rRcy5IJ8--fY2yKN0GdmTlgg1-9sv4ssqqzwA6b4kCHt6yTQAs8pPWdfBumnG_7gutLW9Q3jGlZZT4WL3MG4pRekPEuEXiRMCcI2w610XiPvhvt7G5R8JyIoQzFrEave0lX1Y_JkJx_F8VHlCanvvDG21ex0usWmVDH83QD5mqTU"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<span class="label-style text-[10px] bg-surface-container-highest px-2 py-1 rounded mb-3 inline-block">KOMUNITAS SOSIAL</span>
+<h3 class="text-2xl font-bold mb-2">Majelis Kreatif</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Ruang diskusi santai mengenai integrasi teknologi dan nilai spiritual dalam kehidupan sehari-hari.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-1 group-hover:gap-2 transition-all" href="#">GABUNG CLUB <span class="material-symbols-outlined text-sm">north_east</span></a>
+</article>
+<!-- Club 3 -->
+<article class="group">
+<div class="aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Overhead view of students coding together on a large communal table with sketches and digital tablets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkxN0TZT1cRXSalC26o8W07OR3xBpPAft7iBq3qOdteVl6ldwaEiyoZFwInmRhP7eex1Mr4G5FfnouIJPGUjOVhV-QW4169wsc2f7JMCEJfgTi3lKuQYuUjUrd-cMg170kbSbUpxLgBH-YI3h4cpd84GH_oHLMXF_JvIp73M5pVMnAKyaVmMEGJk8S1sDxscTz_hW6Q3WePsVq329Q_Wh37dKoSTbZ9xM1esFlV3cseRjhy6G_3dz2I2OOQ0zLXj2DFP16o-7U1qA"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<span class="label-style text-[10px] bg-surface-container-highest px-2 py-1 rounded mb-3 inline-block">TEKNOLOGI &amp; INOVASI</span>
+<h3 class="text-2xl font-bold mb-2">IDDC Tech Hub</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Workshop pengembangan aplikasi dan web yang fokus pada solusi untuk kemaslahatan umat.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-1 group-hover:gap-2 transition-all" href="#">GABUNG CLUB <span class="material-symbols-outlined text-sm">north_east</span></a>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 w-full py-12 px-8 mt-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-noto-serif font-semibold text-slate-900 dark:text-slate-100 text-xl">IDDC</span>
+<p class="font-noto-serif text-sm text-slate-500 dark:text-slate-400">© 2024 Islamic Digital Design Center. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-noto-serif text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Privacy Policy</a>
+<a class="font-noto-serif text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Terms of Service</a>
+<a class="font-noto-serif text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Campus Map</a>
+<a class="font-noto-serif text-sm text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">share</span>
+</div>
+</div>
+</footer>
+<!-- FAB Suppression: Contextually hidden based on page intent (Academic/Details) -->
+</body></html>

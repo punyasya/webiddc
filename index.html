@@ -1,0 +1,283 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#094cb2",
+              "accent-teal": "#00f5d4",
+              "accent-magenta": "#ff00bd",
+              "surface": "#ffffff",
+              "on-surface": "#0f172a",
+              "on-surface-variant": "#475569",
+            },
+            fontFamily: {
+              "headline": ["Montserrat", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Montserrat', sans-serif; }
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .skew-box {
+            transform: skewY(-1deg);
+        }
+        .skew-box > * {
+            transform: skewY(1deg);
+        }
+        .border-bold {
+            border-width: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-on-surface selection:bg-accent-teal selection:text-on-surface">
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl shadow-sm border-b border-slate-100 transition-all">
+    <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1440px] mx-auto">
+        <div class="font-headline text-2xl font-black tracking-tighter text-primary flex items-center gap-3">
+            <img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhBzR2OAvLBBFdzbmZd2wre3bcGfXI4SsnEVmqQunPJqmfTEPYf42JYBK0qdxzW-mBhBK_3xft7pVHBHudYvZX2wNTvGnxMVl2zIbJu5VLfPg34ApA6qX7oDXE39AyQQIzrJN6X936lTQFNBcI2g-h0zrioYQE3wS2xTc-fX_BpFSbxRyXHqhGWJKCvnjE7KHOLDe2Y3ISZYsawuZXRCs-jmlixSRilRnpwr4wsXN9Pqbp2tMZhbmmD4cIB2TK3l-YvGsjgt6_D5Q">
+            <span class="text-slate-900 hidden sm:block">IDDC</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-8 font-body font-bold text-sm uppercase tracking-widest">
+            <a class="hover:text-primary transition-colors text-slate-700" href="index.html">Home</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="academic.html">Academic</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="showcase.html">Showcase</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="community.html">Community</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="community.html" class="bg-primary text-white px-6 py-2.5 font-headline text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all rounded-full">
+                Join Us
+            </a>
+        </div>
+    </div>
+</nav>
+<main class="pt-20">
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0 flex">
+<div class="w-2/3 h-full overflow-hidden">
+<img alt="Creative Collaboration" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQGxQA2wr1cFuxChga3A0gRX6ldXKMRsncqC0ANQACtSPNIbY7LdhZ4RnuRqDqogqO-nOODH6XlJ7V73EglbOmIvZ6SwSAttqOj-AhH-gXD9q66UNIbZh1R9quMyL1UoPHkjBngngLX1YJGn1UxJM3tsQtYkjRRH3zMvEj4MNoTMDjdtu0TgoJveWP1ljimMH5hV-8hUYL1XVC8mTyaXWCEcBpVLZWAH0o-LxHWF63kDXEA5-b0zRAMPkS_q1R88nV9vinYZEa0KI" style="">
+</div>
+<div class="w-1/3 h-full bg-accent-teal/10 border-l border-slate-100 flex items-center p-12">
+<div class="hidden lg:block rotate-90 origin-left text-slate-200 text-9xl font-black whitespace-nowrap uppercase -translate-y-20" style="">
+                    Creative Future
+                 </div>
+</div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-12 w-full">
+<div class="col-span-12 lg:col-span-8 bg-white/90 backdrop-blur-md p-8 md:p-16 border-bold border-primary shadow-[20px_20px_0px_0px_rgba(255,0,189,0.2)]">
+<div class="inline-block bg-accent-magenta text-white text-[10px] font-black uppercase tracking-[0.3em] px-4 py-2 mb-6" style="">Penerimaan mahasiswa baru IDDC</div>
+<h1 class="text-5xl md:text-8xl font-black leading-[0.9] text-on-surface mb-8 tracking-tighter" style="">PMB IDDC</h1>
+<p class="text-lg md:text-2xl text-on-surface-variant font-body max-w-xl leading-relaxed mb-10" style="">
+                    Lebih dari sekadar institusi, IDDC adalah episentrum kolaborasi di mana tradisi bertemu teknologi. Kami memberdayakan mahasiswa untuk merancang masa depan melalui desain yang berimpact.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-10 py-5 font-headline text-sm font-black uppercase tracking-widest hover:bg-on-surface transition-colors flex items-center gap-3" style="">
+                        Mulai Eksplorasi <span class="material-symbols-outlined" style="">arrow_outward</span>
+</button>
+<button class="border-2 border-primary text-primary px-10 py-5 font-headline text-sm font-black uppercase tracking-widest hover:bg-primary/5 transition-colors" style="">
+                        The Manifesto
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-6">
+<h2 class="text-4xl md:text-6xl font-black tracking-tighter" style="">HUB KREATIF <span class="text-accent-teal" style="">MAHASISWA.</span></h2>
+<div class="h-[2px] flex-grow bg-slate-100 mx-8 hidden md:block"></div>
+<a class="font-headline font-black text-xs uppercase tracking-widest flex items-center gap-2 hover:text-accent-magenta" href="#" style="">
+                View All Categories <span class="material-symbols-outlined" style="">trending_flat</span>
+</a>
+</div>
+<div class="magazine-grid">
+<div class="col-span-12 lg:col-span-7 bg-slate-50 p-12 border-l-8 border-accent-teal relative overflow-hidden group">
+<div class="relative z-10">
+<span class="text-xs font-black text-accent-teal uppercase tracking-widest mb-4 block" style="">Education Reimagined</span>
+<h3 class="text-3xl md:text-5xl font-black mb-6 tracking-tight" style="">Kurikulum Masa Depan</h3>
+<p class="text-on-surface-variant mb-8 text-lg max-w-md" style="">Menghapus batas antara teori dan praktik industri melalui pendekatan berbasis proyek digital kelas dunia.</p>
+<a class="group flex items-center gap-3 font-headline font-black text-sm uppercase" href="#" style="">
+                        Explore Programs <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" style="">east</span>
+</a>
+</div>
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[15rem] text-slate-200/50 -rotate-12 group-hover:rotate-0 transition-transform duration-700" style="">design_services</span>
+</div>
+<div class="col-span-12 lg:col-span-5 bg-accent-magenta p-12 text-white flex flex-col justify-between group">
+<div>
+<h3 class="text-4xl font-black mb-4 tracking-tighter" style="">Portofolio Inovatif</h3>
+<p class="text-white/80 font-medium mb-12" style="">Menampilkan karya terbaik dari desainer masa depan kami.</p>
+</div>
+<div class="relative h-48 w-full bg-black/20 overflow-hidden mb-6">
+<span class="material-symbols-outlined absolute inset-0 m-auto text-6xl text-white/30" style="">auto_awesome</span>
+</div>
+<button class="bg-white text-accent-magenta w-full py-4 font-headline font-black uppercase text-xs tracking-widest hover:bg-black hover:text-white transition-colors" style="">
+                    Lihat Galeri Mahasiswa
+                </button>
+</div>
+<div class="col-span-12 lg:col-span-4 bg-primary p-12 text-white relative overflow-hidden h-[500px] flex flex-col justify-end">
+<div class="absolute top-0 right-0 p-8">
+<div class="w-16 h-16 rounded-full border-2 border-accent-teal flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-teal" style="">groups</span>
+</div>
+</div>
+<h3 class="text-3xl font-black mb-4" style="">Community Space</h3>
+<p class="text-white/70 mb-8" style="">Ruang kolaborasi terbuka untuk berjejaring dan berbagi inspirasi setiap hari.</p>
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-primary bg-slate-300"></div>
+<div class="w-12 h-12 rounded-full border-4 border-primary bg-slate-400"></div>
+<div class="w-12 h-12 rounded-full border-4 border-primary bg-slate-500"></div>
+<div class="w-12 h-12 rounded-full border-4 border-primary bg-accent-teal flex items-center justify-center text-primary font-black text-xs" style="">+120</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-0 border-bold border-slate-900 overflow-hidden group">
+<div class="h-full overflow-hidden">
+<img alt="Alumni Spotlight" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvNRzEwk648GWgWn-aIfh4zaiO4hT1cJ76hO2_TNDIDjy110VgArvHN7lwaKsRhqOMgWKrCzwgJstBWmcw45nW3EOh0hWJffOvSvHTrddR7CV8x8h-hr6dIPuhnshNtWnSZye6hzaN5hKfgBK-k3JPQO-OHJnRsbIkAtpizMk8rJY_xtr5KRM_qwgrKdENv2zayPpvcCDo_Y3jv99DSTbyhfk9xkZKHDE7QVfk9XrOECH-del1U2kNumYysmAovD84E7yKCll35dw" style="">
+</div>
+<div class="p-12 bg-white flex flex-col justify-center border-l-bold border-slate-900">
+<span class="text-accent-magenta font-black text-[10px] uppercase tracking-[0.2em] mb-4" style="">Alumni Spotlight</span>
+<blockquote class="text-2xl font-black italic mb-8 leading-tight" style="">"IDDC memberdayakan saya untuk melihat melampaui layar dan menciptakan solusi nyata untuk dunia."</blockquote>
+<p class="font-headline font-black text-xs uppercase tracking-widest text-primary" style="">— Sarah Al-Fatih, Senior Curator</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-black text-white py-24 overflow-hidden relative">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-accent-magenta/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+<div class="space-y-10">
+<div class="inline-block border-2 border-accent-teal text-accent-teal px-4 py-1 text-[10px] font-black uppercase tracking-widest" style="">Future-Forward Support</div>
+<h2 class="text-5xl md:text-7xl font-black leading-[0.9] tracking-tighter" style="">SINERGI <br> <span class="text-accent-teal" style="">GLOBAL.</span></h2>
+<p class="text-white/60 text-xl font-light leading-relaxed max-w-lg" style="">
+                    Membangun ekosistem kreatif bukan perjalanan solo. Kami mengundang visioner dan industri untuk berkolaborasi dalam mendanai inovasi dan membuka jalan bagi talenta muda.
+                </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="border-l-4 border-accent-magenta pl-6">
+<div class="text-5xl font-black text-white mb-2" style="">30+</div>
+<div class="text-[10px] font-black uppercase tracking-widest text-white/50" style="">Global Partners</div>
+</div>
+<div class="border-l-4 border-accent-teal pl-6">
+<div class="text-5xl font-black text-white mb-2" style="">12B</div>
+<div class="text-[10px] font-black uppercase tracking-widest text-white/50" style="">Innovation Fund</div>
+</div>
+</div>
+<button class="bg-accent-teal text-black px-10 py-5 font-headline text-sm font-black uppercase tracking-widest hover:bg-white transition-colors" style="">
+                    Become a Partner
+                </button>
+</div>
+<div class="bg-white/5 backdrop-blur-sm p-1 md:p-8 border border-white/10 relative">
+<div class="bg-white text-on-surface p-10 shadow-2xl">
+<h3 class="text-2xl font-black mb-8 flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary" style="">rocket_launch</span> Dana Pemberdayaan
+                    </h3>
+<div class="space-y-8">
+<div>
+<div class="flex justify-between items-end mb-4">
+<span class="font-bold text-sm uppercase tracking-tight" style="">Beasiswa Inovator Muda</span>
+<span class="text-primary font-black text-xl" style="">75% Funded</span>
+</div>
+<div class="w-full bg-slate-100 h-4">
+<div class="bg-primary h-full w-[75%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-4">
+<span class="font-bold text-sm uppercase tracking-tight" style="">Lab Desain Imersif</span>
+<span class="text-accent-magenta font-black text-xl" style="">40% Funded</span>
+</div>
+<div class="w-full bg-slate-100 h-4">
+<div class="bg-accent-magenta h-full w-[40%]"></div>
+</div>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mt-10 font-medium uppercase tracking-widest text-center" style="">Bergabunglah dalam mencapai target 2024</p>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-accent-teal text-black p-6 font-headline font-black text-sm uppercase tracking-tighter hidden md:block" style="">
+                    Impact over ego.
+                </div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-[1440px] mx-auto px-6">
+<div class="bg-accent-magenta p-12 md:p-24 relative overflow-hidden group">
+<div class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+<div class="text-[20vw] font-black text-white whitespace-nowrap -rotate-12" style="">NEWSLETTER NEWSLETTER</div>
+</div>
+<div class="relative z-10 text-center space-y-10">
+<h2 class="text-4xl md:text-7xl font-black text-white tracking-tighter leading-[0.85]" style="">TETAP <span class="text-black" style="">TERINSPIRASI.</span></h2>
+<p class="text-white/80 font-bold max-w-2xl mx-auto text-xl" style="">
+                    Dapatkan update mingguan tentang inovasi desain, berita komunitas, dan peluang karir terbaru langsung di inbox-mu.
+                </p>
+<form class="flex flex-col md:flex-row gap-0 max-w-2xl mx-auto border-4 border-black">
+<input class="flex-grow px-8 py-5 bg-white border-none focus:ring-0 text-black font-bold placeholder:text-slate-400" placeholder="your@email.com" type="email">
+<button class="bg-black text-white px-12 py-5 font-headline font-black uppercase text-sm tracking-[0.2em] hover:bg-white hover:text-black transition-all" style="">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t-bold border-slate-900 py-20">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-20">
+<div class="md:col-span-5">
+<div class="font-headline text-4xl font-black tracking-tighter text-primary mb-8" style="">IDDC</div>
+<p class="text-slate-500 text-lg leading-relaxed mb-10 max-w-sm" style="">
+                    Pusat keunggulan desain digital yang memberdayakan mahasiswa melalui inovasi dan kolaborasi komunitas.
+                </p>
+<div class="flex gap-8">
+<a class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center hover:bg-accent-magenta transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">share</span></a>
+<a class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center hover:bg-accent-teal hover:text-black transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">public</span></a>
+<a class="w-12 h-12 bg-slate-900 text-white flex items-center justify-center hover:bg-primary transition-colors" href="#" style=""><span class="material-symbols-outlined" style="">mail</span></a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-headline font-black text-xs uppercase tracking-widest text-slate-900 mb-8" style="">Manifesto</h4>
+<ul class="space-y-4 font-bold text-sm text-slate-500">
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Our Vision</a></li>
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Curriculum</a></li>
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Mentors</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-headline font-black text-xs uppercase tracking-widest text-slate-900 mb-8" style="">Hub</h4>
+<ul class="space-y-4 font-bold text-sm text-slate-500">
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Showcase</a></li>
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Community</a></li>
+<li class="" style=""><a class="hover:text-accent-magenta" href="#" style="">Admissions</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="font-headline font-black text-xs uppercase tracking-widest text-slate-900 mb-8" style="">HQ</h4>
+<p class="text-slate-500 text-sm font-bold leading-relaxed" style="">
+                    Jl. Innovation District No. 8<br>
+                    Digital Valley, Indonesia<br>
+                    hello@iddc.edu
+                </p>
+</div>
+</div>
+<div class="pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-400 text-xs font-bold uppercase tracking-widest" style="">© 2024 IDDC. Designed for the Future.</p>
+<div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+<a class="hover:text-black" href="#" style="">Privacy Policy</a>
+<a class="hover:text-black" href="#" style="">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

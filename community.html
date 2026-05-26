@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#434653",
+              "inverse-on-surface": "#f2f0f1",
+              "primary": "#094cb2",
+              "tertiary-container": "#bfab49",
+              "surface-tint": "#2259bf",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e9e8e9",
+              "secondary": "#5a5f63",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#00419d",
+              "error": "#ba1a1a",
+              "on-primary-container": "#e7ebff",
+              "on-primary-fixed": "#001946",
+              "tertiary-fixed": "#f9e37a",
+              "surface": "#faf9fa",
+              "on-tertiary-fixed": "#211b00",
+              "surface-variant": "#e3e2e3",
+              "primary-fixed-dim": "#b1c5ff",
+              "on-secondary-container": "#606569",
+              "on-secondary-fixed": "#171c20",
+              "on-error": "#ffffff",
+              "background": "#faf9fa",
+              "surface-container-highest": "#e3e2e3",
+              "outline": "#737784",
+              "on-secondary-fixed-variant": "#42474b",
+              "secondary-container": "#dfe3e8",
+              "surface-bright": "#faf9fa",
+              "secondary-fixed": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#524600",
+              "outline-variant": "#c3c6d5",
+              "primary-container": "#3366cc",
+              "tertiary": "#6d5e00",
+              "surface-dim": "#dbdadb",
+              "primary-fixed": "#d9e2ff",
+              "tertiary-fixed-dim": "#dcc661",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#303031",
+              "on-tertiary-container": "#4a3f00",
+              "surface-container": "#efedee",
+              "surface-container-low": "#f5f3f4",
+              "secondary-fixed-dim": "#c2c7cc",
+              "on-background": "#1b1c1d",
+              "inverse-primary": "#b1c5ff",
+              "on-surface": "#1b1c1d"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3 { font-family: 'Noto Serif', serif; }
+      .label-text { font-family: 'Public Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<header>
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl shadow-sm border-b border-slate-100 transition-all">
+    <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1440px] mx-auto">
+        <div class="font-headline text-2xl font-black tracking-tighter text-primary flex items-center gap-3">
+            <img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhBzR2OAvLBBFdzbmZd2wre3bcGfXI4SsnEVmqQunPJqmfTEPYf42JYBK0qdxzW-mBhBK_3xft7pVHBHudYvZX2wNTvGnxMVl2zIbJu5VLfPg34ApA6qX7oDXE39AyQQIzrJN6X936lTQFNBcI2g-h0zrioYQE3wS2xTc-fX_BpFSbxRyXHqhGWJKCvnjE7KHOLDe2Y3ISZYsawuZXRCs-jmlixSRilRnpwr4wsXN9Pqbp2tMZhbmmD4cIB2TK3l-YvGsjgt6_D5Q">
+            <span class="text-slate-900 hidden sm:block">IDDC</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-8 font-body font-bold text-sm uppercase tracking-widest">
+            <a class="hover:text-primary transition-colors text-slate-700" href="index.html">Home</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="academic.html">Academic</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="showcase.html">Showcase</a>
+            <a class="hover:text-primary transition-colors text-slate-700" href="community.html">Community</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="community.html" class="bg-primary text-white px-6 py-2.5 font-headline text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all rounded-full">
+                Join Us
+            </a>
+        </div>
+    </div>
+</nav>
+</header>
+<main class="max-w-screen-2xl mx-auto">
+<!-- Hero Section: PMB 2024 -->
+<section class="relative h-[716px] flex items-center px-6 md:px-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="interior of a modern high-end library with dark wood scholarly atmosphere and soft golden sunlight streaming through tall windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2gIGpGfRD4SVVUQ2KWJiqY2TldqSQZrdeqMDbmx7NHg1I435mp-P6-45mDOAdQReeDe-4vKB6SminbB-B08ohF6BD4h015R6aE1fcv6Mkczw2tLgze_y5zKz48opbHCKwNXgy0psjdWyufwGGcWTrJY_q2MXaGOy-Ws0SMXW9IUDEGjVDtxMBhGNgoZ1-bzTHjbwEiUbu_9YBJeBK4WrBYZB7Ii0f2KIhPi7OZGg51sMrUQM718PAEWxL1IR2zfPKCx-KTZ9PcFY"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="font-label font-bold text-tertiary tracking-widest uppercase mb-4 block">Penerimaan Mahasiswa Baru</span>
+<h1 class="text-6xl md:text-8xl font-black mb-6 text-on-background leading-tight">Masa Depan Desain Digital Islami Dimulai Di Sini.</h1>
+<p class="text-xl font-body text-on-surface-variant mb-10 max-w-xl">Bergabunglah dengan pusat unggulan kreativitas digital yang berlandaskan nilai-nilai luhur. Pendaftaran TA 2024/2025 kini dibuka.</p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-label font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">Daftar Sekarang</button>
+<button class="bg-surface-container-high text-primary px-10 py-4 rounded-full font-label font-bold text-lg hover:bg-surface-container-highest transition-colors">Unduh Prospektus</button>
+</div>
+</div>
+</section>
+<!-- Admission Step-by-Step Guide -->
+<section class="py-24 px-6 md:px-20 bg-surface-container-low">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<h2 class="text-4xl font-bold mb-4">Langkah Pendaftaran PMB</h2>
+<p class="text-on-surface-variant">Proses seleksi kami dirancang untuk menemukan talenta kreatif yang memiliki visi untuk membangun peradaban melalui desain.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold text-xl">1</div>
+<h3 class="text-xl font-bold">Registrasi Akun</h3>
+<p class="text-sm text-on-surface-variant font-body">Mulai perjalanan Anda dengan membuat akun di portal PMB IDDC menggunakan email aktif.</p>
+<span class="material-symbols-outlined text-primary text-4xl mt-auto">app_registration</span>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold text-xl">2</div>
+<h3 class="text-xl font-bold">Portofolio &amp; Berkas</h3>
+<p class="text-sm text-on-surface-variant font-body">Unggah karya terbaik Anda dan dokumen pendukung akademik lainnya untuk ditinjau oleh tim kurator.</p>
+<span class="material-symbols-outlined text-primary text-4xl mt-auto">browse_gallery</span>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold text-xl">3</div>
+<h3 class="text-xl font-bold">Wawancara Kreatif</h3>
+<p class="text-sm text-on-surface-variant font-body">Sesi dialog mendalam tentang visi desain Anda dan bagaimana Anda dapat berkontribusi di ekosistem kami.</p>
+<span class="material-symbols-outlined text-primary text-4xl mt-auto">forum</span>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col gap-6 hover:translate-y-[-8px] transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container font-bold text-xl">4</div>
+<h3 class="text-xl font-bold">Konfirmasi &amp; Inisiasi</h3>
+<p class="text-sm text-on-surface-variant font-body">Setelah dinyatakan diterima, selesaikan administrasi dan selamat bergabung di IDDC.</p>
+<span class="material-symbols-outlined text-primary text-4xl mt-auto">school</span>
+</div>
+</div>
+</section>
+<!-- Kolaborasi (Partnerships & Projects) -->
+<section class="py-24 px-6 md:px-20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="font-label font-bold text-tertiary tracking-widest uppercase mb-4 block">Kolaborasi Global</span>
+<h2 class="text-5xl font-bold leading-tight">Membangun Ekosistem Bersama Pemimpin Industri.</h2>
+</div>
+<button class="font-label font-bold text-primary flex items-center gap-2 hover:underline underline-offset-8">
+                    Ajukan Kemitraan <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Bento Grid of Collaborative Projects -->
+<div class="grid grid-cols-12 gap-6 h-auto md:h-[800px]">
+<div class="col-span-12 md:col-span-8 relative rounded-2xl overflow-hidden bg-slate-900 group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="team of diverse designers working in a modern minimalist office space with large monitors displaying geometric islamic art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAutik4lDfV0JmOm9U6xg7fnU68a8ZkpYJPy3RQMi0djdFn81s9aq0lxfufsAB0Zb_E2I15rUTNbvXvglWWe4Rtt24BHnpEy5yqEY5LJXCaxqZ_JDodU2Ldk2hjn1E1qpJzObKnI8hEIigOOhM8NZP3GoEhhQ4eaCPaWU8Y18cXD_ADk85ZoKMGDWDfOtgwL9ckKGU3U9istMjLrGTHiuOu7283VlG_ZdXaTIlXahz6ZgdCQ20UHPcVlmnh-ZDEi3GEFHE2IYtqwqE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="bg-tertiary text-white px-3 py-1 rounded-full text-xs font-label font-bold mb-4 inline-block uppercase">Featured Project</span>
+<h3 class="text-3xl font-bold text-white mb-2">Digital Archiving: The Great Mosque Project</h3>
+<p class="text-slate-300 max-w-lg mb-6">Kolaborasi riset antara IDDC dan Heritage Foundation dalam mendigitalkan manuskrip arsitektur klasik.</p>
+<div class="flex gap-4">
+<img class="h-8 w-auto grayscale brightness-200" data-alt="minimalist white company logo for heritage foundation research partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0xRHJRJKwxlvpQ2LlVWBEP3qsUjZ0zGTPJumTaF-PGSkH8UrE84Uoo1qSzd1b7VB48r-tGClKQrJOH0u7_uJyb7x1gVq4lXz5svEh4Qci3BCYwkMACrBlzZ_B4jfuPAqjmJMivFjXDfyUBpsZueHwWcBW7B1_zF9ZAWc0on6ycb0f5mXz7qlDcORPIcMHbDZkLr8hOsqUAvIpq1m9ndoQMra_OA0be03Ma8-oZvkf4zDypMScUK_p9qrQs9aB5UnvFiHS3yx7U8A"/>
+<img class="h-8 w-auto grayscale brightness-200" data-alt="minimalist tech company logo for global infrastructure partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4I5dY_YqW0M-_BCoIQv94LhY9bwpEBEP6jejxR5C90Bnx9QKFiH03mFSFndO-uCy7I5fTF_qOHow_AajKY3oG1u_yVgnbmGBafybjnppdMvPq8BSnzZRxs7n84COqF_kIY_PXIQnXnHFQVsEmqsNzLKBmudauICxQaQzJSJKamKggCn0LN784sh7RLRBVINBorZtAYuHFFa1anPS1muO2gozI-QaXEkKplU1um-u-8f1bI8lKFbhCHVywZb1-tO32N63GMbl2seY"/>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 bg-surface-container rounded-2xl p-8 flex flex-col">
+<h3 class="text-2xl font-bold mb-6">Partnership Ecosystem</h3>
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<div>
+<h4 class="font-bold">40+ Academic Partners</h4>
+<p class="text-xs text-on-surface-variant font-label">Pertukaran mahasiswa dan riset gabungan lintas benua.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">handshake</span>
+</div>
+<div>
+<h4 class="font-bold">120+ Industry Hubs</h4>
+<p class="text-xs text-on-surface-variant font-label">Jalur cepat karir bagi lulusan melalui program magang eksklusif.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold">Global Accreditations</h4>
+<p class="text-xs text-on-surface-variant font-label">Standar internasional dalam kurikulum desain digital.</p>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-10 grid grid-cols-2 gap-4">
+<div class="h-20 bg-white/50 rounded-lg flex items-center justify-center p-4">
+<img class="max-h-full grayscale opacity-50" data-alt="placeholder logo for international design alliance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJAAgapUqyjZQ3SEQlN12wEbn0zLl3awSh9ao11_RTvyQhbJLJGbdFYY1XCRdKf_tNfdyZVA_964ziFGSuoZN6mhzIPp9mN5EGJlNOVvGgMeRWdzOHJVPSGBfdH-5tFAJHW7rBtMlGX-z805aCzeU3ajl-SukiDsT8rPjyJSngO2TtXpGHovemVEoYBU0bmol219ymMMvMFp0xu0p-P067fequTLGTaOlXlMdLLY1BHBKb72J8Silkb8b_ioQH8_WEZCqLFfCLfIk"/>
+</div>
+<div class="h-20 bg-white/50 rounded-lg flex items-center justify-center p-4">
+<img class="max-h-full grayscale opacity-50" data-alt="placeholder logo for global tech education group" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhp-T81dmSub1Eg-6NiiaaYcBntkcUzSKf86ycmMXqAxgyEvuBVpvy-mdVUj2Jcgp5VTwuPVrxUNqz7JLqEJ3AGz7dXkUQ-Sp4aMhXcEKJ61UAGAH_UQgx6qo21v1vB3nFBsQqyyOfELoormdOo8ZyPsRO5ZB1kJgeSoWdg65zlVoYHIZo_CkfDVKZeP48ZhBd7CyMv0BnY955GV3AAYmbyAXgub41hRFdqeHvXjE3mGfS6B2voPglKdXNyJYcHmIabKq2dzkuTg0"/>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 bg-primary-container text-on-primary-container p-10 rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-3xl font-bold mb-4">Beasiswa Kolaborasi</h3>
+<p class="text-on-primary-container/80 mb-8 max-w-sm">Dukungan finansial penuh bagi mahasiswa berprestasi melalui program kemitraan IDDC &amp; Yayasan Madani.</p>
+<button class="bg-white text-primary px-6 py-2 rounded-full font-label font-bold">Cek Kriteria</button>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-[12rem] opacity-10 rotate-12">workspace_premium</span>
+</div>
+<div class="col-span-12 md:col-span-6 bg-surface-container-high p-10 rounded-2xl flex flex-col justify-between">
+<div>
+<h3 class="text-3xl font-bold mb-4">Alumni Network</h3>
+<p class="text-on-surface-variant mb-6">Terhubung dengan ribuan lulusan yang kini berkarya di Google, Meta, dan studio desain ternama di Timur Tengah.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-surface-container-high bg-slate-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a successful woman designer working at a top tech firm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBqUzMcRIHLp8SvCE5d3uOpPLyp1k97Qbt1Gatau4DfOpvA_cEHhmdwBsZI1dKgLaXs5DAfcOHwPCvMJLuViyWm2s54kaGWcHdKPb7vFSXjvMl7DGzIMlO00JuQbHzft9hbqjZflZeswwaHjFYwH5g1tPaYUWljX2BpTa_JTYdLTz2BYydkcVuD1Y9eGAUO-VsrCgeijmtxGzCd5eEQj5s0aKjWhxzMX2D2XCQmF65jzng_tOIqvw31w5Eg-uX0wkcR2ujwbtyH2I"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface-container-high bg-slate-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a professional male UI developer in business casual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9bo0sJssSlPFQeDkT7J5idKrgKQExbwJWi9KTplEPOeUSRJnl76-PQn4lZcLqGxyZY4Iu3JverflIQvER0IY41m69QzUqonFZkxvCX5AefnB0IGuOlG4hjGIiCvMVrc6xyvzGRg5vuO47vGlcXaaylQzxrCNoTg7yfbno4PKoaT-WXO83WqpOPnickIB_gBoKB7n24H034gkwEhSgFFdybGq3qb29KH4RrH4rPWGqyt_62A2stHlH_WdvZV3LVSDvtHaYjGIp_Wk"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface-container-high bg-slate-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a creative professional woman smiling in studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSUlCKQeTxGK36m4iQ9M8k-DOXT9DWA9mIT_mAh_FIMYOCg__-7Mofy5Bf7lyiiIqm53p0-p1VlfRLYby_cSYJq8atqw3ruLn936XStCqrN3aDq5Bvyl3tL8RX5FwFmz-71RGiNPQ6jyerStRMaxxSvEEtmN4slrm7VVFiE94rqUsqIcCk-YNg3Q0U6twR-hYa6waL0vTvSDh4ZHUWz_cDBgpiLF3j4YV-Q65fdAaZRouNBDCggGOa82pbwkmgexiCG3tils-vn9A"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface-container-high bg-primary flex items-center justify-center text-on-primary font-label text-xs font-bold">+2.4k</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact CTA -->
+<section class="py-24 px-6 md:px-20 text-center">
+<div class="bg-surface-container-lowest p-16 rounded-3xl border border-outline-variant/15 max-w-4xl mx-auto shadow-sm">
+<h2 class="text-4xl font-bold mb-6">Tertarik Berkolaborasi?</h2>
+<p class="text-on-surface-variant mb-10 max-w-lg mx-auto">Sampaikan ide, proyek, atau pertanyaan Anda mengenai pendaftaran kepada tim humas kami.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<input class="bg-surface border-none focus:ring-2 focus:ring-primary rounded-full px-8 py-4 w-full md:w-80 font-body" placeholder="Alamat email Anda" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label font-bold hover:bg-primary-container transition-colors">Kirim Pesan</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-noto-serif font-semibold text-slate-900 dark:text-slate-100 text-xl">IDDC</span>
+<p class="font-noto-serif text-sm text-slate-500 dark:text-slate-400">© 2024 Islamic Digital Design Center. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-noto-serif text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-slate-900 dark:hover:text-slate-100 transition-colors hover:underline decoration-[#094cb2] underline-offset-4" href="#">Privacy Policy</a>
+<a class="hover:text-slate-900 dark:hover:text-slate-100 transition-colors hover:underline decoration-[#094cb2] underline-offset-4" href="#">Terms of Service</a>
+<a class="hover:text-slate-900 dark:hover:text-slate-100 transition-colors hover:underline decoration-[#094cb2] underline-offset-4" href="#">Campus Map</a>
+<a class="hover:text-slate-900 dark:hover:text-slate-100 transition-colors hover:underline decoration-[#094cb2] underline-offset-4" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">share</span>
+</div>
+</div>
+</footer>
+</body></html>
